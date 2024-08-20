@@ -1,0 +1,31 @@
+setup:
+  data:
+    source: "AI-MO/NuminaMath-CoT"
+    type: "huggingface"
+    split: 'train'
+  output_dir: "processed_datasets/numina_math_cot/with_vsl_hdf5"
+  processes: 16
+  mode: "finetuning"
+processing:
+  max_seq_length: 8192
+  short_seq_prob: 0.0
+  write_in_batch: True
+  resume_from_checkpoint: False
+  seed: 0
+  read_hook: "cerebras.modelzoo.data_preparation.data_preprocessing.hooks:chat_read_hook"
+  read_hook_kwargs:
+    data_keys:
+      multi_turn_key: 'messages'
+    multi_turn_content_key: 'content'
+    has_system_prompt: false
+  shuffle: True
+  custom_tokenizer: 'cerebras.modelzoo.data_preparation.data_preprocessing.custom_tokenizer_example.CustomLlama3Tokenizer:CustomLlama3Tokenizer'
+  tokenizer_params: 
+    pretrained_model_name_or_path: 'meta-llama/Meta-Llama-3-8B-Instruct'
+dataset:
+  sep_token: <|reserved_special_token_0|>
+  use_ftfy: True
+  ftfy_normalizer: "NFC"
+  wikitext_detokenize: False
+  pack_sequences: True
+  use_vsl: True

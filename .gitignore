@@ -1,0 +1,6 @@
+SkgInstruct/skginstruct.json
+*/processed_datasets
+*/checkpoints
+__pycache__
+Cerebras-Llama3-DocChat/cerebras_datasets/hybrid-dialogue/
+Cerebras-Llama3-DocChat/cerebras_datasets/tatqa-cot/

@@ -1,0 +1,5 @@
+# Cerebras Wafer-Scale Cluster
+
+The Cerebras Wafer-Scale Cluster (WSC) is a revolutionary technology suite that efficiently handles the enormous computational needs of AI model training. It centers around the CS-3 system, powered by the 3rd generation Wafer-Scale Engine (WSE-3)—the world’s largest AI-optimized processor. The WSC integrates MemoryX for high-capacity, off-chip model weight storage, and SwarmX for effective weight broadcasting and gradient reduction across the cluster. This setup allows the WSC to adeptly train multi-trillion parameter models, achieving near perfect linear-scaled performance and simplifying the complexity seen in traditional distributed computing.
+
+The Cerebras WSE-3 is 46,250 square millimeters of silicon, 4 trillion transistors, 900K cores, 44 GB on-chip memory, and delivers an unparalleled 125 petaFLOPS of AI compute. It surpasses all other processors in AI-optimized cores, memory speed, and on-chip fabric bandwidth.

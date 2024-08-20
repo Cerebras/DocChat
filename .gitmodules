@@ -1,0 +1,6 @@
+[submodule "Nvidia-ChatQA/ChatQA-Training-Data"]
+	path = Nvidia-ChatQA/ChatQA-Training-Data
+	url = https://huggingface.co/datasets/nvidia/ChatQA-Training-Data
+[submodule "Nvidia-ChatQA/ChatRAG-Bench"]
+	path = Nvidia-ChatQA/ChatRAG-Bench
+	url = https://huggingface.co/datasets/nvidia/ChatRAG-Bench
